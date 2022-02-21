@@ -11,6 +11,8 @@ type Greet struct {
 }
 
 func serveHelloWorld(w http.ResponseWriter, r *http.Request) {
+	log.Println("GET / called")
+
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "text/plain; charset=UTF-8")
 
