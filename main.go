@@ -22,6 +22,6 @@ func serveHelloWorld(w http.ResponseWriter, r *http.Request) {
 func main() {
 	log.Println("Hello docker_hello_rest")
 
-	http.HandleFunc("/hello", serveHelloWorld)
+	http.HandleFunc("/", serveHelloWorld)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
