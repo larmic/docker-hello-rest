@@ -8,7 +8,7 @@ Tiny docker image provides an `/hello` endpoints supported on all architectures.
 ## Start
 
 ````shell
-docker run -ti --rm -p 8080:8080 larmic/hello-world-rest
+docker run -ti --rm -p 8080:8080 larmic/docker-hello-rest
 ````
 
 ## Example
